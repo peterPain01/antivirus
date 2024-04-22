@@ -27,7 +27,7 @@ def file_dialog():
 def execute_engine(file_path):
     if file_path:
         file_label.config(text=file_path)
-        result = subprocess.run(["C:/Users/ADMIN/Desktop/Project1/x64/Debug/Project1.exe", file_path], stdout=subprocess.PIPE)
+        result = subprocess.run(["C:/Users/ADMIN/Desktop/MetaDenfender_Logic/x64/Debug/MetaDenfender_Logic.exe", file_path], stdout=subprocess.PIPE)
         output_text.delete(1.0, END)  # Clear previous output
         output_text.insert(END, result.stdout.decode())  # Insert captured output
         output_text.see(END)
